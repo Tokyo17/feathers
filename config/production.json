@@ -1,4 +1,4 @@
 {
     "host": "HOST",
-    "port": "PORT"
+    "port": "https://feathersapp.vercel.app"
   }
