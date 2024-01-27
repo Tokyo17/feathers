@@ -36,7 +36,6 @@
   "main": "src/client",
   "type": "module",
   "scripts": {
-    "build": "feathers generate",
     "start": "node src/index.js",
     "dev": "nodemon src/",
     "prettier": "npx prettier \"**/*.js\" --write",
