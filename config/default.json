@@ -1,0 +1,43 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "./public/",
+  "origins": [
+    "http://localhost:3030"
+  ],
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "mysql": {
+    "client": "mysql",
+    "connection": "mysql://dyvnom1c077cul5fsfh5:pscale_pw_21GoXYZzWJNwfWpc47Piv5jONg89OYKjg90er3JRpJ@aws.connect.psdb.cloud/belajar?ssl={\"rejectUnauthorized\":true}"
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "npxvHu237DMaORKI7NWsl8G7eJATByzW",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "oauth": {
+      "github": {
+        "key": "<Client ID>",
+        "secret": "<Client secret>"
+      }
+    }
+  }
+}
