@@ -36,7 +36,8 @@
   "main": "src/client",
   "type": "module",
   "scripts": {
-    "start": "npm run compile && NODE_ENV=production node lib/",
+    "build": "feathers generate",
+    "start": "node src/index.js",
     "dev": "nodemon src/",
     "prettier": "npx prettier \"**/*.js\" --write",
     "mocha": "cross-env NODE_ENV=test mocha test/ --recursive --exit",
